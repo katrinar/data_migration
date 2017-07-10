@@ -59,7 +59,7 @@ let import_client_data = () => {
     })
     process.on('exit', () => {
       return console.log(`SENT POST REQUESTS FOR ${statusCount} CUSTOMERS: ${statusReport}`);
-    })
-}
+    });
+};
 
-module.exports = import_client_data()
+module.exports = import_client_data();
