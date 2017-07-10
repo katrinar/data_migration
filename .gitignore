@@ -1,0 +1,4 @@
+node_modules
+.env
+customer_data.csv
+.DS_Store

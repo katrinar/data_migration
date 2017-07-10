@@ -1,0 +1,17 @@
+{
+  "name": "nodescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "import_client_data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node import_client_data.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^1.11.0",
+    "dotenv": "^4.0.0",
+    "request": "^2.81.0"
+  }
+}
