@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const fs = require('fs');
 const csvParser = require('csv-parser');
 const request = require("request");
@@ -6,7 +6,7 @@ let rowCount = 0;
 let statusCount = 0;
 let statusReport = '';
 
-let import_client_data = function(){
+let import_client_data = () => {
   fs.createReadStream('customer_data.csv')
     .pipe(csvParser())
     .on('data', (row) => {
@@ -44,7 +44,7 @@ let import_client_data = function(){
         json: true
       };
 
-      request(options, function (error, response, body) {
+      request(options, (error, response, body) => {
         if (error) { throw new Error(error) };
         statusCount += 1;
         statusReport += `${statusCount}: ${JSON.stringify(body)} \n`;
