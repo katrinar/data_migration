@@ -11,7 +11,7 @@ let import_client_data = () => {
     .pipe(csvParser())
     .on('data', (row) => {
       rowCount += 1;
-      let customer = {
+      let {
         firstName,
         lastName,
         email,
